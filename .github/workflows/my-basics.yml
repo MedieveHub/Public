@@ -1,0 +1,21 @@
+#
+
+name: CI-pushtomaster
+
+on: 
+ push:
+  branches:
+    - master
+jobs:
+  test-push:
+  
+    runs-on: pushaction
+    
+    steps:
+    - name: Print starting message
+      run: echo "hotfix commited"
+    
+  deploy:
+    - name: Print starting message
+      run: echo "hotfix commited"
+  
