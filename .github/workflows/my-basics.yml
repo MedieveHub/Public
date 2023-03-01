@@ -16,6 +16,11 @@ jobs:
       run: echo "hotfix commited"
     
   deploy:
-    - name: Print starting message
+  
+    runs-on: pushaction
+  
+    steps:
+    
+    - name: Print starting message 2
       run: echo "hotfix commited"
   
