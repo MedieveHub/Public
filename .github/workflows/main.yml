@@ -9,7 +9,7 @@ on:
 jobs:
   test-push:
   
-    runs-on: pushaction
+    runs-on: ubuntu-latest
     
     steps:
     - name: Print starting message
@@ -17,7 +17,7 @@ jobs:
     
   deploy:
   
-    runs-on: pushaction
+    runs-on: ubuntu-latest
     needs: [test-push]
     steps:
     
