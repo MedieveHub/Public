@@ -5,7 +5,7 @@ name: CI-pushtomaster
 on: 
  push:
   branches:
-    - master
+    - main
 jobs:
   test-push:
   
@@ -18,8 +18,8 @@ jobs:
   deploy:
   
     runs-on: pushaction
-  
+    needs: [test-push]
     steps:
     
-    - name: Print starting message 2
-      run: echo "hotfix commited"
+    - name: Print Deploying
+      run: echo "hotfix deployed"
